@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>filtertabel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Table Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      margin-bottom: 12px;
+      padding: 8px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #0f172a;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f1f5f9;
+    }
+  </style>
 </head>
 <body>
-    
- <h1>filter tabel </h1>
+
+  <h2>Filter Table Example 🔍</h2>
+  <input type="text" id="searchInput" placeholder="Search by any field...">
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Ali</td><td>Lahore</td><td>25</td></tr>
+      <tr><td>Hassan</td><td>Karachi</td><td>30</td></tr>
+      <tr><td>Ahmed</td><td>Islamabad</td><td>22</td></tr>
+      <tr><td>Bilal</td><td>Multan</td><td>27</td></tr>
+      <tr><td>Zain</td><td>Quetta</td><td>29</td></tr>
+    </tbody>
+  </table>
+
+<script src="./app.js"></script>
 </body>
 </html>
+
